@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VUE入门</title>
+    <script src="vue30.js"></script>
+</head>
+<body>
+
+    <div id = "test">
+            {{message}}
+    </div>
+   
+</body>
+
+<script>
+    const {createApp} = Vue 
+    const message="Hello Vue2"
+
+    const app={
+        setup(){
+            return {
+                message
+            }
+        }
+    }
+    // const app={
+    //     setup(){
+    //         return {
+    //             message
+    //         }
+    //     }
+    // }
+
+    createApp(app).mount('#test')
+
+   
+</script>
+
+</html>

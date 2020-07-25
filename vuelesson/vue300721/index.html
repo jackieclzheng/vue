@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue入门</title>
+    <script src="vue30.js"></script>
+</head>
+<body>
+    
+    <div id="test">
+
+        {{message}}
+
+    </div>
+
+    
+    <!--<div id="root">hello world1</div>-->
+    <!--<div id="root">{{msg}}</div>-->
+    <script>
+        
+        const {createApp} = Vue 
+        const message="Test Vue"
+
+        const app={
+            setup(){
+                return {
+                    message
+                }
+            }
+        }
+        
+        createApp(app).mount("#test")
+        // new Vue({
+        //     el:"#root", //创建一个vue实例
+        //     data:{
+        //         msg:"hello world"
+        //     }
+        // })
+    </script>
+
+</body>
+</html>

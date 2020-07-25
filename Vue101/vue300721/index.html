@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VUE入门</title>
+    <script src="vue30.js"></script>
+</head>
+<body>
+    <div  id="app">
+
+        {{message}}
+
+    </div>
+</body>
+
+<script>
+
+    const {createApp} = Vue
+
+    const message="hello VUE"
+
+    const app={
+        setup(){
+            return {
+                message
+            }
+        }
+    }
+
+    createApp(app).mount('#app')
+    // new Vue({
+    //         el:"#root", //element，定义的是数据绑定的结点
+    //         data:{
+    //             msg:"Hello VUE" //要绑定的数据
+    //         }
+    //
+    //     })
+</script>
+
+</html>

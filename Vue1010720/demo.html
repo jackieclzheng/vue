@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VUE入门</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <div id="root">{{msg}}</div>
+
+    <script>
+        new Vue({
+            el:"#root", //element，定义的是数据绑定的结点
+            data:{
+                msg:"Hello VUE" //要绑定的数据
+            }
+
+        })
+    </script>
+
+</body>
+</html>
